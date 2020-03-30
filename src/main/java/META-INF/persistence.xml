@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+       <persistence-unit name="punit" transaction-type="RESOURCE_LOCAL">
+              <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+              <class>com.fdmgroup.Entities.User</class>
+              <class>com.fdmgroup.Entities.Product</class>
+              <class>com.fdmgroup.Entities.BankAccount</class>
+              <class>com.fdmgroup.Entities.Orders</class>
+              <class>com.fdmgroup.Entities.Comments</class>
+              
+              <properties>
+              <property name="hibernate.show_sql" value="true" />
+
+              <!-- EclipseLink should create the database schema automatically -->
+              <property name="eclipselink.ddl-generation" value="create-tables" />
+              <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+              <property name="eclipselink.ddl-generation.output-mode"
+                   value="database" />
+              <property name="eclipselink.jdbc.native-sql" value="false"/>
+              <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+              <property name="javax.persistence.jdbc.user" value="trainee1"/>
+              <property name="javax.persistence.jdbc.password" value="!QAZSE4"/>
+              <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+              </properties>
+       </persistence-unit>
+</persistence>

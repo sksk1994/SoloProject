@@ -1,0 +1,84 @@
+.mainheader{
+	  text-align: center;
+	  color: #ffffff;
+	  font-size: 30px;
+	  width: 100%;
+  
+  	background-color:#292c2f;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	box-sizing: border-box;
+	top:-100px;
+}
+.compname{
+	float:left;
+}
+
+.putchasedetails{
+	text-align:center;
+	display: inline-block;
+}
+.logo{
+	float:left;
+	display:inline;
+	text-align:center;
+	color: white;
+	width: 30px;
+	height: 30px;
+}
+.mytext{
+	width:300px;
+	height:150px;
+}
+
+.container{
+	border: 2px solid #000000;
+	border-radius: 5px;
+	padding: 80px 16px 25px 16px;
+	text-align:center;
+	border: 2px black;
+}
+.leftcontainer{
+	width:50%;
+	float: left;
+}
+
+.rightcontainer{
+	width:50%;
+	float: right;
+	vertical-align: text-top;
+}
+
+.signedinbar{
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.form{
+	
+	  display: inline-block;
+}
+
+.prodName{
+	font-size: 30px;
+}
+
+.table{
+	text-align:center;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+.purchasedetails{
+	border: 1px solid black;
+	display:block;
+	
+	
+}
+	
